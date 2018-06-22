@@ -11,7 +11,7 @@
 - Render the Table Component
 - Iterate through the `data` array and render a TableRow for each resource.
 - Render the status and duration of a response.
-- Complete the methods: `onClickFetchResource`, `onClickViewDetails`
+- Complete the method `onClickFetchResource` to use our ApiService class when the green "GET" button is clicked. 
 - In the ApiService class, complete the `fetchResources` method to communicate with any resource endpoint. Create or update the resource object properties to store the status, duration, and body of the response.
 - Implement a timer constructor function to determine the duration of each API request/response.
 - Use `isLoading` from the Table Component state to show/hide a loading icon when a resource is requested. Use SCSS to make the icon spin.
