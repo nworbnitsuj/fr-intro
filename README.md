@@ -2,7 +2,8 @@
 
 ### Getting Started
 - Fork to your own repo
-- RUN `npm install && npm start && open localhost:3000`
+- Run `npm install && npm start`
+- Open localhost:3000
 
 ### Goal: 
 ##### Demonstrate the ability to work with TypeScript, React, and SCSS, in a webpack-dev environment. Effectively manipulate state to navigate the UI and traverse parent-child relationships to efficiently display and update content. Communicate across a RESTful API and render content delivered asynchronously. Consider the following principles in your final implementation: OOP, DRY, SOA.
