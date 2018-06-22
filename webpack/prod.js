@@ -1,3 +1,6 @@
+// DO NOT EDIT
+
+
 // production config
 const merge = require('webpack-merge');
 const {resolve} = require('path');
