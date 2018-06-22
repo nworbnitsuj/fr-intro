@@ -1,0 +1,8 @@
+$primary-color: #eca620 !default;
+$secondary-color: #232323 !default;
+
+@mixin centeredContents() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

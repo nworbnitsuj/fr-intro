@@ -1,0 +1,10 @@
+@import "../index";
+
+.fa-spinner {
+    -webkit-animation: spin 1000ms infinite linear;
+    animation: spin 1000ms infinite linear;
+}
+
+.action-buttons {
+    text-align: center;
+}
