@@ -39,6 +39,18 @@ export default class Table extends React.Component<any> {
                     <td>{resources[0].name}</td>
                     <td>{resources[0].endpoint}</td>
                 </tr>
+                <tr>
+                    <td>{resources[1].name}</td>
+                    <td>{resources[1].endpoint}</td>
+                </tr>
+                <tr>
+                    <td>{resources[2].name}</td>
+                    <td>{resources[2].endpoint}</td>
+                </tr>
+                <tr>
+                    <td>{resources[3].name}</td>
+                    <td>{resources[3].endpoint}</td>
+                </tr>
                 </tbody>
             </table>
         );
