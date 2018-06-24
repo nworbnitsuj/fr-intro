@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const TableRow: React.StatelessComponent<any> = () => (
+const TableRow: React.StatelessComponent<any> = ({resource, isLoading, onClickFetchResource, onClickSample}) => (
     <tr>
         <td>{resource.name}</td>
         <td>{resource.endpoint}</td>
@@ -11,7 +11,7 @@ const TableRow: React.StatelessComponent<any> = () => (
                 <button onClick={onClickFetchResource}
                         className="btn btn-success">GET
                 </button>
-                <button onClick={onClickSample()}
+                <button onClick={onClickSample}
                         className="btn btn-info">Sample
                 </button>
             </div>

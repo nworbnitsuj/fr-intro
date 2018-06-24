@@ -2,7 +2,7 @@ import * as React from "react";
 import "./Table.scss";
 import ApiService from "../shared/apiService";
 import data from "../shared/resources";
-
+import {TableRow} from "./"
 
 export default class Table extends React.Component<any> {
     public static defaultProps: any = {
@@ -13,8 +13,10 @@ export default class Table extends React.Component<any> {
     };
 
     public onClickFetchResource(e, resource) {
+        const timer = ApiService.timer();
         timer.start();
         ApiService.fetchResource(resource)
+
     }
 
     public onClickSample(e, resource) {
@@ -36,8 +38,12 @@ export default class Table extends React.Component<any> {
                 </thead>
                 <tbody>
                 <tr>
-                    <td>{resources[0].name}</td>
-                    <td>{resources[0].endpoint}</td>
+                    {resources.map((resource, i) =>
+                        <TableRow
+                            resource={resource}
+                            isLoading={this.state.isLoading}
+                        />
+                    )}
                 </tr>
                 </tbody>
             </table>
