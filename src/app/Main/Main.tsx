@@ -1,5 +1,6 @@
 import * as React from "react";
 import "./Main.scss";
+import { Table, TableRow } from "../Table"
 
 const frLogo = require("../../assets/logo.png");
 
@@ -37,7 +38,7 @@ export default class Main extends React.Component {
                 <div className="container">
                     <div className="row">
                         <div className="container">
-                            {/*CONTENT GOES HERE*/}
+                            <Table />
                         </div>
                     </div>
                 </div>
